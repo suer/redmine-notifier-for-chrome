@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Redmine Notifier for Chrome™</title>
+    <meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="all">
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/options.js"></script>
+  </head>
+  <body>
+    <div class='main'>
+      <div class='header'>
+        <h1 style='font-size:1.5em;'>Redmine Notifier for Chrome™</h1>
+      </div>
+      <div class='content'>
+        <form onsubmit="javascript:window.close();">
+          <fieldset>
+            <div class="clearfix">
+              <div class="left">
+                <label>Redmine API Key</label>
+              </div>
+              <div class="right">
+                <input name="redmine-api-key" id="redmine-api-key" class="text" placeholder="ws://localhost:18082" autofocus="true" />
+              </div>
+            </div>
+            <div class="clearfix">
+              <div class="left">
+                <label>Websocket URL</label>
+              </div>
+              <div class="right">
+                <input name="websocket-url" id="websocket-url" class="text" placeholder="ws://localhost:18082/redmine" /><br />
+              </div>
+            </div>
+          </fieldset>
+          <div class="buttons">
+            <input value="Save" class="button save" type="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
